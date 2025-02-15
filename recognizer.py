@@ -73,7 +73,7 @@ while True:
 
         # Display name below face
         cv2.rectangle(frame, (left, bottom - 25), (right, bottom), color, cv2.FILLED)
-        cv2.putText(frame, name, (left + 6, bottom - 6), cv2.FONT_HERSHEY_DUPLEX, 0.5, (255, 255, 255), 1)
+        cv2.putText(frame, name, (left + 6, bottom - 6), cv2.FONT_HERSHEY_DUPLEX, 1, (0, 0, 0), 1)
 
     # Show the frame
     cv2.imshow("Facial Recognition", frame)
